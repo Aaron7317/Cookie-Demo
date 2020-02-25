@@ -25,6 +25,11 @@ function showJSCookie() {
   document.getElementById("demo-1-reveal").innerHTML = "Clicks: " + getCookie("clicks");
 }
 
+function deleteJSCookie() {
+  var d = new Date();
+  setCookie("clicks", 0, d.getTime() - 1);
+}
+
 window.onload = function() {
   document.getElementById("demo-1-button").onclick = function addClick() {
     if (isNaN(getCookie("clicks"))) {

@@ -9,8 +9,8 @@
 
   	<?php
 	
-	if (isset($_POST['name'])) {
-	$text = $_POST['name'];
+	if (isset($_POST['text'])) {
+	$text = $_POST['text'];
 	} else {
 		$text = null;
 	}
@@ -51,6 +51,7 @@
 
 		<div class="demo-3">
 			<button type="button" onclick="showJSCookie()">Show Javascript Cookie</button>
+			<button type="button" onclick="deleteJSCookie()">Delete Javascript Cookie</button>
 			<p id="demo-1-reveal"></p>
 		</div>
 
