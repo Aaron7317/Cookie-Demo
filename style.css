@@ -1,11 +1,17 @@
 body {
 	background-color: rgb(0, 0, 0);
+	background-image: url(images/green-bg.jpg);
+	background-attachment: fixed;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .main-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	background-image: url(blue-bg.jpg);
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 20fr;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 }
@@ -13,26 +19,41 @@ body {
 
 .title {
 	grid-area: 1 / 2 / 2 / 4;
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: rgba(50, 50, 50, 0.5);
 	text-align: center;
 }
 
 .body {
-	grid-area: 2 / 1 / 5 / 3;
-	background-color: rgba(100, 100, 100, 0.5);
+	grid-area: 2 / 1 / 6 / 3;
+	background-color: rgba(50, 50, 50, 0.5);
 }
 
 .demo-1 {
 	grid-area: 2 / 3 / 3 / 5;
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: rgba(50, 50, 50, 0.5);
 }
 
 .demo-2 {
 	grid-area: 3 / 3 / 4 / 5;
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: rgba(50, 50, 50, 0.5);
 }
 
 .demo-3 {
 	grid-area: 4 / 3 / 5 / 5;
-	background-color: rgba(100, 100, 100, 0.5);
+	background-color: rgba(50, 50, 50, 0.5);
+}
+
+.demo-4 {
+	grid-area: 5 / 3 / 6 / 5;
+	background-color: rgba(50, 50, 50, 0.5);
+}
+
+.tutorial-1 {
+	grid-area: 6 / 1 / 7 / 5;
+	background-color: rgba(50, 50, 50, 0.5);
+}
+
+.tutorial-1 img {
+	height: 20%;
+	object-fit: cover;
 }
